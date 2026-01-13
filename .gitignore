@@ -1,0 +1,5 @@
+.env
+*.xlsx
+*.pyc
+*.pem
+*.zip
