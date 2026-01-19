@@ -70,6 +70,7 @@ class LineItem(BaseModel):
 
 class POSubmission(BaseModel):
     po_number: str = Field(..., alias="poNumber")
+    excel_filename: Optional[str] = Field(None, alias="excelFilename")
     lines: List[LineItem]
 
     class Config:

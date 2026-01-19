@@ -1,6 +1,9 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
+from sqlalchemy.orm import Session
 from backend.app.schemas.po_models import POSubmission
 from backend.app.services.oracle import oracle_service
+from backend.app.services.logging_service import logging_service
+from backend.app.core.database import get_db
 import logging
 
 logger = logging.getLogger(__name__)
@@ -8,14 +11,25 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 @router.post("/process-lines")
-async def process_lines(submission: POSubmission):
+async def process_lines(submission: POSubmission, db: Session = Depends(get_db)):
     logger.info(f"Received submission for PO: {submission.po_number} with {len(submission.lines)} lines")
     
+    # Create Upload Log
+    upload_record = logging_service.create_upload(
+        db, 
+        filename=submission.excel_filename or "Unknown", 
+        total_lines=len(submission.lines)
+    )
+
     try:
         # Step 1: Get PO Header ID
         header_id = oracle_service.get_po_header_id(submission.po_number)
         if not header_id:
-            raise HTTPException(status_code=404, detail=f"PO Number {submission.po_number} not found in Oracle.")
+            error_msg = f"PO Number {submission.po_number} not found in Oracle."
+            logging_service.update_upload_status(db, upload_record.id, "Failed", 0, len(submission.lines))
+            # Log all lines as failed due to missing PO? Or just fail the upload?
+            # Let's just fail the upload.
+            raise HTTPException(status_code=404, detail=error_msg)
         
         logger.info(f"Found POHeaderId: {header_id}")
 
@@ -24,24 +38,51 @@ async def process_lines(submission: POSubmission):
         errors = []
 
         for line in submission.lines:
+            # Prepare line data for logging (include PO Header ID if useful)
+            line_data = line.model_dump(by_alias=True)
+            line_data['POHeaderId'] = header_id
+            
             success, error_msg = oracle_service.create_line_item(header_id, line)
+            
             if success:
                 created_count += 1
+                logging_service.log_line_item(db, upload_record.id, submission.po_number, line_data, "Success")
             else:
                 errors.append(f"Line {line.line_number}: {error_msg}")
+                logging_service.log_line_item(db, upload_record.id, submission.po_number, line_data, "Error", error_msg)
+
+        status = "Completed" if len(errors) == 0 else "Completed (Partial)"
+        if created_count == 0 and len(errors) > 0:
+            status = "Failed"
+
+        logging_service.update_upload_status(db, upload_record.id, status, created_count, len(errors))
 
         return {
             "status": "success" if len(errors) == 0 else "partial_success",
             "message": f"Processed PO {submission.po_number}. Created {created_count}/{len(submission.lines)} lines.",
             "poHeaderId": header_id,
-            "errors": errors
+            "errors": errors,
+            "uploadId": upload_record.id
         }
 
     except HTTPException as he:
+        # Update upload status if not already set? 
+        # Ideally we should wrap this to ensure status is updated on crash
+        logging_service.update_upload_status(db, upload_record.id, "Failed", 0, 0)
         raise he
     except Exception as e:
         logger.error(f"Error processing PO: {str(e)}")
+        logging_service.update_upload_status(db, upload_record.id, "Failed", 0, 0)
         raise HTTPException(status_code=500, detail=str(e))
+
+@router.post("/log-download")
+async def log_download(start_log: dict, db: Session = Depends(get_db)):
+    # Expecting { "uploadId": 123 }
+    upload_id = start_log.get("uploadId")
+    if upload_id:
+        logging_service.increment_download_count(db, upload_id)
+        return {"status": "success"}
+    return {"status": "ignored"}
 
 @router.get("/")
 def read_root():

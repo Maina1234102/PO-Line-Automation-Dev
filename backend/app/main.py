@@ -15,6 +15,10 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    # Initialize DB tables
+    from backend.app.core.database import Base, engine
+    Base.metadata.create_all(bind=engine)
+    
     # Load mappings on startup
     logger.info("Loading mappings...")
     mapping_service.load_mappings()

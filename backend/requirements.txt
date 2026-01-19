@@ -5,3 +5,5 @@ python-multipart
 python-dotenv
 pandas
 openpyxl
+sqlalchemy
+psycopg2-binary

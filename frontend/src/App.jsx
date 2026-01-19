@@ -10,6 +10,7 @@ function App() {
   const [message, setMessage] = useState({ type: '', text: '' })
   const [fileName, setFileName] = useState('')
   const [hasProcessed, setHasProcessed] = useState(false)
+  const [uploadId, setUploadId] = useState(null)
 
   const handleFileChange = async (e) => {
     const file = e.target.files[0]
@@ -110,6 +111,7 @@ function App() {
     }
 
     setIsSubmitting(true)
+    setUploadId(null)
     setMessage({ type: 'info', text: 'Processing...' })
 
     try {
@@ -168,6 +170,7 @@ function App() {
 
       const payload = {
         poNumber: poNumber,
+        excelFilename: fileName,
         lines: mappedLines
       }
 
@@ -181,6 +184,10 @@ function App() {
       })
 
       const data = await response.json()
+
+      if (data.uploadId) {
+        setUploadId(data.uploadId)
+      }
 
 
 
@@ -242,8 +249,22 @@ function App() {
     }
   }
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     if (lineItems.length === 0) return;
+
+    // Log download event
+    if (uploadId) {
+      try {
+        await fetch('https://172.16.10.130:8000/log-download', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ uploadId })
+        });
+      } catch (e) {
+        console.error("Failed to log download:", e);
+      }
+    }
+
     const worksheet = XLSX.utils.json_to_sheet(lineItems);
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "PO_Lines");
