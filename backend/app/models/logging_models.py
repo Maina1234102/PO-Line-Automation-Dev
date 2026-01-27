@@ -19,6 +19,15 @@ class ExcelUpload(Base):
 
     line_items = relationship("LineItemLog", back_populates="upload")
 
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True, nullable=False)
+    password = Column(String, nullable=False)
+    is_active = Column(Boolean, default=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
 class LineItemLog(Base):
     __tablename__ = "line_item_logs"
 

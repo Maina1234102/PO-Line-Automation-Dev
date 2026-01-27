@@ -22,6 +22,30 @@ async def lifespan(app: FastAPI):
     # Load mappings on startup
     logger.info("Loading mappings...")
     mapping_service.load_mappings()
+
+    # Seed User
+    from backend.app.models.logging_models import User
+    from backend.app.core.database import SessionLocal
+    db = SessionLocal()
+    try:
+        user_email = "maina@inspiraenterprise.com"
+        user_password = "Welcome@123"
+        
+        existing_user = db.query(User).filter(User.email == user_email).first()
+        if not existing_user:
+            logger.info(f"Seeding user: {user_email}")
+            new_user = User(email=user_email, password=user_password)
+            db.add(new_user)
+            db.commit()
+        else:
+            # Ensure password is correct even if user exists (to match request)
+            if existing_user.password != user_password:
+                logger.info(f"Updating password for user: {user_email}")
+                existing_user.password = user_password
+                db.commit()
+    finally:
+        db.close()
+
     yield
     # Clean up resources if needed
     logger.info("Shutting down...")

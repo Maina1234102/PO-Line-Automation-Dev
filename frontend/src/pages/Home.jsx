@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import * as XLSX from 'xlsx'
 import '../App.css'
-import { Link } from 'react-router-dom'
-import { LayoutDashboard } from 'lucide-react'
+import { Link, useNavigate } from 'react-router-dom'
+import { LayoutDashboard, LogOut } from 'lucide-react'
 
 function Home() {
     const [poNumber, setPoNumber] = useState('')
@@ -13,6 +13,12 @@ function Home() {
     const [fileName, setFileName] = useState('')
     const [hasProcessed, setHasProcessed] = useState(false)
     const [uploadId, setUploadId] = useState(null)
+    const navigate = useNavigate()
+
+    const handleLogout = () => {
+        localStorage.removeItem('isAuthenticated')
+        navigate('/login')
+    }
 
     const handleFileChange = async (e) => {
         const file = e.target.files[0]
@@ -295,11 +301,29 @@ function Home() {
                     textDecoration: 'none',
                     fontWeight: 600,
                     border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.3s ease'
+                    transition: 'all 0.3s ease',
+                    marginRight: '0.5rem'
                 }}>
                     <LayoutDashboard size={20} />
                     Dashboard
                 </Link>
+                <button onClick={handleLogout} style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    padding: '0.8rem 1.2rem',
+                    background: 'rgba(255, 80, 80, 0.2)',
+                    backdropFilter: 'blur(10px)',
+                    borderRadius: '12px',
+                    color: 'white',
+                    border: '1px solid rgba(255, 80, 80, 0.3)',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                }}>
+                    <LogOut size={20} />
+                    Logout
+                </button>
             </div>
 
             <div className="glass-card" style={{ maxWidth: lineItems.length > 0 ? '90%' : '500px', transition: 'max-width 0.3s' }}>

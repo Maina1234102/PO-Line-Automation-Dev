@@ -1,7 +1,8 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from backend.app.schemas.po_models import POSubmission
-from backend.app.models.logging_models import ExcelUpload # Added import for upload details endpoint
+from backend.app.schemas.user_schemas import UserLogin
+from backend.app.models.logging_models import ExcelUpload, User # Added User import
 from backend.app.services.oracle import oracle_service
 from backend.app.services.logging_service import logging_service
 from backend.app.core.database import get_db
@@ -10,6 +11,19 @@ import logging
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
+
+@router.post("/login")
+async def login(user_credentials: UserLogin, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.email == user_credentials.email).first()
+    
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid credentials")
+    
+    # Direct comparison as requested (plain text for now, but usually should be hashed)
+    if user.password != user_credentials.password:
+        raise HTTPException(status_code=401, detail="Invalid credentials")
+        
+    return {"status": "success", "message": "Login successful", "user": {"email": user.email}}
 
 @router.post("/process-lines")
 async def process_lines(submission: POSubmission, db: Session = Depends(get_db)):
