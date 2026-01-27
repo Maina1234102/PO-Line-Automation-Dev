@@ -17,7 +17,18 @@ function Home() {
 
     const handleLogout = () => {
         localStorage.removeItem('isAuthenticated')
+        localStorage.removeItem('userEmail')
+        localStorage.removeItem('userPassword')
         navigate('/login')
+    }
+
+    const getAuthHeader = () => {
+        const email = localStorage.getItem('userEmail');
+        const password = localStorage.getItem('userPassword');
+        if (email && password) {
+            return { 'Authorization': 'Basic ' + btoa(email + ':' + password) };
+        }
+        return {};
     }
 
     const handleFileChange = async (e) => {
@@ -188,6 +199,7 @@ function Home() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    ...getAuthHeader()
                 },
                 body: JSON.stringify(payload),
             })
@@ -266,7 +278,10 @@ function Home() {
             try {
                 await fetch('https://172.16.10.130:8000/log-download', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...getAuthHeader()
+                    },
                     body: JSON.stringify({ uploadId })
                 });
             } catch (e) {

@@ -52,12 +52,21 @@ const Dashboard = () => {
     const [recentUploads, setRecentUploads] = useState([])
     const [loading, setLoading] = useState(true)
 
+    const getAuthHeader = () => {
+        const email = localStorage.getItem('userEmail');
+        const password = localStorage.getItem('userPassword');
+        if (email && password) {
+            return { 'Authorization': 'Basic ' + btoa(email + ':' + password) };
+        }
+        return {};
+    }
+
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const [metricsRes, uploadsRes] = await Promise.all([
-                    fetch('https://172.16.10.130:8000/dashboard/metrics'),
-                    fetch('https://172.16.10.130:8000/dashboard/recent-uploads')
+                    fetch('https://172.16.10.130:8000/dashboard/metrics', { headers: getAuthHeader() }),
+                    fetch('https://172.16.10.130:8000/dashboard/recent-uploads', { headers: getAuthHeader() })
                 ])
 
                 if (metricsRes.ok && uploadsRes.ok) {

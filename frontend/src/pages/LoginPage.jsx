@@ -32,6 +32,8 @@ const LoginPage = () => {
 
             if (response.ok) {
                 localStorage.setItem('isAuthenticated', 'true');
+                localStorage.setItem('userEmail', credentials.email);
+                localStorage.setItem('userPassword', credentials.password);
                 navigate('/');
             } else {
                 setError(data.detail || 'Invalid email or password.');

@@ -7,10 +7,12 @@ from backend.app.services.mappings import mapping_service
 logger = logging.getLogger(__name__)
 
 class OracleService:
-    def get_po_header_id(self, order_number: str) -> str:
+    def get_po_header_id(self, order_number: str, auth: tuple = None) -> str:
         url = f"{settings.ORACLE_BASE_URL}/fscmRestApi/resources/latest/purchaseOrders?q=OrderNumber='{order_number}'"
         try:
-            response = requests.get(url, auth=(settings.ORACLE_USER, settings.ORACLE_PASS))
+            # Use provided auth or fallback to settings (fallback for migration/test)
+            request_auth = auth if auth else (settings.ORACLE_USER, settings.ORACLE_PASS)
+            response = requests.get(url, auth=request_auth)
             response.raise_for_status()
             data = response.json()
             
@@ -21,7 +23,7 @@ class OracleService:
             logger.error(f"Oracle GET API Error: {e}")
             raise
 
-    def create_line_item(self, po_header_id: str, line_item: LineItem) -> tuple[bool, str]:
+    def create_line_item(self, po_header_id: str, line_item: LineItem, auth: tuple = None) -> tuple[bool, str]:
         url = f"{settings.ORACLE_BASE_URL}/fscmRestApi/resources/11.13.18.05/draftPurchaseOrders/{po_header_id}/child/lines"
         
         # Pre-process logic (mapping lookups)
@@ -80,7 +82,8 @@ class OracleService:
 
         try:
             logger.info(f"Creating line item with payload: {payload}")
-            response = requests.post(url, auth=(settings.ORACLE_USER, settings.ORACLE_PASS), json=payload, headers=headers)
+            request_auth = auth if auth else (settings.ORACLE_USER, settings.ORACLE_PASS)
+            response = requests.post(url, auth=request_auth, json=payload, headers=headers)
             
             if response.status_code in [200, 201]:
                 logger.info(f"Line item {line_item.line_number} created successfully.")
@@ -92,5 +95,15 @@ class OracleService:
         except requests.exceptions.RequestException as e:
             logger.error(f"Oracle POST API Error: {e}")
             return False, str(e)
+
+    def verify_credentials(self, auth: tuple) -> bool:
+        """Verifies Oracle credentials by making a simple metadata call."""
+        url = f"{settings.ORACLE_BASE_URL}/fscmRestApi/resources/latest/purchaseOrders?limit=1"
+        try:
+            response = requests.get(url, auth=auth)
+            return response.status_code == 200
+        except Exception as e:
+            logger.error(f"Credential verification failed: {e}")
+            return False
 
 oracle_service = OracleService()
