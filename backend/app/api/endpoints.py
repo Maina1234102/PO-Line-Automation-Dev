@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from backend.app.schemas.po_models import POSubmission
+from backend.app.models.logging_models import ExcelUpload # Added import for upload details endpoint
 from backend.app.services.oracle import oracle_service
 from backend.app.services.logging_service import logging_service
 from backend.app.core.database import get_db
@@ -82,7 +83,27 @@ async def log_download(start_log: dict, db: Session = Depends(get_db)):
     if upload_id:
         logging_service.increment_download_count(db, upload_id)
         return {"status": "success"}
+    if upload_id:
+        logging_service.increment_download_count(db, upload_id)
+        return {"status": "success"}
     return {"status": "ignored"}
+
+@router.get("/dashboard/metrics")
+def get_dashboard_metrics(db: Session = Depends(get_db)):
+    return logging_service.get_dashboard_metrics(db)
+
+@router.get("/dashboard/recent-uploads")
+def get_recent_uploads(db: Session = Depends(get_db)):
+    uploads = logging_service.get_recent_uploads(db, limit=20)
+    return uploads
+
+@router.get("/dashboard/upload/{upload_id}")
+def get_upload_details(upload_id: int, db: Session = Depends(get_db)):
+    # Simple fetch for now, can be expanded to return line logs if needed
+    upload = db.query(ExcelUpload).filter(ExcelUpload.id == upload_id).first()
+    if not upload:
+        raise HTTPException(status_code=404, detail="Upload not found")
+    return upload
 
 @router.get("/")
 def read_root():

@@ -103,6 +103,16 @@ body::before {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover-text-white:hover {
+  color: white !important;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.3s ease;
+}
+
 .glass-card:hover {
   background: var(--bg-card-hover);
   box-shadow: var(--shadow-lg), var(--shadow-glow);

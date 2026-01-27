@@ -1,4 +1,5 @@
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 from backend.app.models.logging_models import ExcelUpload, LineItemLog
 from datetime import datetime
 import json
@@ -42,5 +43,34 @@ class LoggingService:
         if upload:
             upload.download_count += 1
             db.commit()
+
+    def get_recent_uploads(self, db: Session, limit: int = 20):
+        return db.query(ExcelUpload).order_by(ExcelUpload.created_at.desc()).limit(limit).all()
+
+    def get_dashboard_metrics(self, db: Session):
+        total_uploads = db.query(ExcelUpload).count()
+        
+        # Calculate success rate based on lines or uploads? Let's do uploads for now
+        # "Success" if status is "Completed"
+        successful_uploads = db.query(ExcelUpload).filter(ExcelUpload.status == "Completed").count()
+        success_rate = (successful_uploads / total_uploads * 100) if total_uploads > 0 else 0
+        
+        # Total lines processed
+        total_lines_processed = db.query(func.sum(ExcelUpload.processed_lines)).scalar() or 0
+        
+        # Pending/Failed
+        failed_uploads = db.query(ExcelUpload).filter(ExcelUpload.status == "Failed").count()
+        
+        # Today's uploads
+        today_start = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
+        today_uploads = db.query(ExcelUpload).filter(ExcelUpload.created_at >= today_start).count()
+
+        return {
+            "totalUploads": total_uploads,
+            "successRate": round(success_rate, 1),
+            "totalLinesProcessed": total_lines_processed,
+            "failedUploads": failed_uploads,
+            "todayUploads": today_uploads
+        }
 
 logging_service = LoggingService()
