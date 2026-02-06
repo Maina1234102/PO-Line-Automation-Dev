@@ -165,7 +165,7 @@ function Home() {
                             _PROJECT_ID: row['Project ID'] || row['_PROJECT_ID'] || row['Project Number'],
                             _EXPENDITURE_ITEM_DATE: row['Expenditure Item Date'] || row['_EXPENDITURE_ITEM_DATE'],
                             _EXPENDITURE_TYPE_ID: row['Expenditure Type ID'] || row['_EXPENDITURE_TYPE_ID'] || row['Expenditure Type Name'] || row['Expenditure Name'],
-                            _ORGANIZATION_ID: row['Expenditure Organization ID'] || row['_ORGANIZATION_ID'] || row['Organization Name'] || row['Expenditure Organization'] || row['OrganizationName'],
+                            _ORGANIZATION_ID_Display: row['Expenditure Organization'] || row['Expenditure Organization ID'] || row['_ORGANIZATION_ID'] || row['Organization Name'] || row['OrganizationName'],
                             _TASK_ID: row['Task ID'] || row['_TASK_ID'],
                             _CONTRACT_ID: row['Contract ID'] || row['_CONTRACT_ID']
                         }] : []

@@ -5,7 +5,7 @@ class ProjectDFF(BaseModel):
     project_id: Optional[Any] = Field(None, alias="_PROJECT_ID")
     expenditure_item_date: Optional[str] = Field(None, alias="_EXPENDITURE_ITEM_DATE")
     expenditure_type_id: Optional[Any] = Field(None, alias="_EXPENDITURE_TYPE_ID")
-    organization_id: Optional[Any] = Field(None, alias="_ORGANIZATION_ID")
+    organization_id: Optional[Any] = Field(None, alias="_ORGANIZATION_ID_Display")
     task_id: Optional[Any] = Field(None, alias="_TASK_ID")
     # contract_id: Optional[Any] = Field(None, alias="_CONTRACT_ID")
 

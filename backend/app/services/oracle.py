@@ -60,18 +60,8 @@ class OracleService:
                                           logger.error(error_msg)
                                           # return False, error_msg # Kept consistent with legacy
 
-                                # 3. Organization Name Lookup
-                                raw_org = str(proj.organization_id) if proj.organization_id is not None else ""
-                                mapped_org = mapping_service.get_organization_id(raw_org)
-
-                                if mapped_org:
-                                    logger.info(f"Mapping Organization Name '{raw_org}' to ID '{mapped_org}'")
-                                    proj.organization_id = mapped_org
-                                else:
-                                    if raw_org and not raw_org.isdigit():
-                                         error_msg = f"Organization ID not found for name: {raw_org}"
-                                         logger.error(error_msg)
-                                         return False, error_msg
+                                # No mapping needed for Organization Name as it is now passed as Display Name
+                                pass
 
         # Dump using aliases to match Oracle expected JSON format
         payload = line_item.model_dump(by_alias=True, exclude_none=True)
