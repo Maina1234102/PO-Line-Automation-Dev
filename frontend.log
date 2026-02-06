@@ -1,0 +1,11 @@
+
+> polineimport@0.0.0 dev
+> vite --host --port 5173
+
+
+  VITE v7.2.7  ready in 154 ms
+
+  ➜  Local:   https://localhost:5173/
+  ➜  Network: https://172.16.10.130:5173/
+  ➜  Network: https://172.18.0.1:5173/
+  ➜  press h + enter to show help

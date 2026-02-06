@@ -31,8 +31,15 @@ class OracleService:
         
         if line_item.schedules:
             for schedule in line_item.schedules:
+                # If DestinationType is Inventory, we must not pass POChargeAccount
+                is_inventory = schedule.destination_type and schedule.destination_type.lower() == "inventory"
+                
                 if schedule.distributions:
                     for dist in schedule.distributions:
+                        if is_inventory:
+                            logger.info(f"DestinationType is 'Inventory' for line {line_item.line_number}. Stripping POChargeAccount.")
+                            dist.po_charge_account = None
+
                         if dist.project_dff:
                             for proj in dist.project_dff:
                                 # 1. Project Number Lookup

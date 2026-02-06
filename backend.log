@@ -1,5 +1,4 @@
-nohup: ignoring input
-INFO:     Started server process [3873040]
+INFO:     Started server process [282535]
 INFO:     Waiting for application startup.
 INFO:backend.app.main:Loading mappings...
 INFO:backend.app.services.mappings:Loaded 3802 project mappings.
@@ -7,1010 +6,143 @@ INFO:backend.app.services.mappings:Loaded 219 expenditure mappings.
 INFO:backend.app.services.mappings:Loaded 1 organization mappings.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on https://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     10.10.19.23:60738 - "OPTIONS /login HTTP/1.1" 200 OK
-INFO:     10.10.19.23:60738 - "POST /login HTTP/1.1" 401 Unauthorized
-INFO:     10.10.19.23:61084 - "POST /login HTTP/1.1" 401 Unauthorized
-INFO:     10.10.19.23:62458 - "POST /login HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64831 - "OPTIONS /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.24:62798 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:60350 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49789 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49789 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:56475 - "OPTIONS /process-lines HTTP/1.1" 200 OK
 INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
 INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
-INFO:backend.app.services.oracle:Mapping Project Number '42776' to ID '300000004099961'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '34', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300000004099961', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 34 created successfully.
-INFO:     10.10.19.23:64831 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54792 - "POST /login HTTP/1.1" 200 OK
-INFO:     10.10.19.23:50470 - "OPTIONS /login HTTP/1.1" 200 OK
-INFO:     10.10.19.23:50470 - "POST /login HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52961 - "OPTIONS /process-lines HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008071 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377539
-INFO:backend.app.services.oracle:Mapping Project Number '42776' to ID '300000004099961'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300000004099961', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 1 created successfully.
-INFO:     10.10.19.23:52961 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.22:49884 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:61995 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:50641 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52574 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:64247 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:50641 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52574 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:50641 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51427 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62167 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62167 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51427 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59366 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:56092 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52124 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59232 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59232 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52124 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:55124 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60051 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51619 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52733 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62998 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52384 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:50105 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:64755 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60181 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:53053 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:61350 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:53039 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57421 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57860 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:56074 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59513 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:49668 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:53750 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:65359 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:63013 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:53879 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59231 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51252 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:49226 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59738 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57227 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62101 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62101 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:56255 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51130 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:64257 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:64257 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57573 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57573 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51811 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:49204 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51657 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:61344 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51609 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51317 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:61319 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:63968 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51948 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:64127 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:54214 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62438 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:65170 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60659 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60227 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59227 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:64926 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:55848 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:55160 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:58222 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:55160 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:58222 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:63035 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51939 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60279 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62940 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60171 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:58389 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:61441 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:55267 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:61730 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60997 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51210 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52309 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:56327 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62537 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:56150 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:50611 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:56693 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:63788 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:54994 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52662 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:54994 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52662 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:59818 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:64854 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:63564 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:61682 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:52043 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51366 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:50123 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:55446 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54162 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64451 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54162 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54162 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60543 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51961 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64634 - "OPTIONS /login HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64634 - "POST /login HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64634 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64634 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64634 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64634 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59386 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62002 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59386 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62002 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59386 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62002 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55891 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59798 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50980 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63369 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50980 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63369 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50782 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58605 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59539 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60629 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59539 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60629 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51307 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56653 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55724 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49287 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55724 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49287 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56056 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61972 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56056 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61972 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64339 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63614 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63614 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64339 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55363 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55363 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55363 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55363 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50542 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61489 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53671 - "GET /dashboard/metrics HTTP/1.1" 401 Unauthorized
-INFO:     10.10.19.30:55500 - "GET /dashboard/recent-uploads HTTP/1.1" 401 Unauthorized
-INFO:     10.10.19.30:65273 - "POST /login HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60176 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53628 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60176 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60612 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60176 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60612 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60507 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51326 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55451 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64060 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51232 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49798 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55451 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64060 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55451 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64060 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55451 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64060 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63697 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63659 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63317 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50157 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63317 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50157 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50534 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61404 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54335 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51836 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54335 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51836 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57159 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62679 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51334 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63917 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51334 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63917 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62605 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64622 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55644 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56754 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55644 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56754 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59337 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51947 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59337 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51947 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63100 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62225 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49313 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49981 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49313 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49981 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64563 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50378 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58397 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50591 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53758 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59030 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55628 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60693 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55628 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60693 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60652 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59509 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52152 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60237 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52148 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52148 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54976 - "OPTIONS /process-lines HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008075 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377572
-INFO:backend.app.services.oracle:Mapping Project Number '1001' to ID '300000003510403'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-21210101-1010-1110-1010-1001-1001', 'projectDFF': [{'_PROJECT_ID': '300000003510403', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 1: 400 - _PROJECT_ID 300000003510403 is not in the list of values.
-INFO:     10.10.19.30:54976 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51230 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63312 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63318 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63318 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50711 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65008 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64974 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50309 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008075 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377572
-INFO:backend.app.services.oracle:Mapping Project Number '1001' to ID '300000003510403'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-21210101-1010-1110-1010-1001-1001-9999', 'projectDFF': [{'_PROJECT_ID': '300000003510403', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 1: 400 - _PROJECT_ID 300000003510403 is not in the list of values.
-INFO:     10.10.19.30:49668 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008075 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377572
-INFO:backend.app.services.oracle:Mapping Project Number '1051' to ID '300000003510331'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110101-9999-9999-1020-9999-1051-9999', 'projectDFF': [{'_PROJECT_ID': '300000003510331', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 1: 400 - _PROJECT_ID 300000003510331 is not in the list of values.
-INFO:     10.10.19.30:59311 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54201 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51138 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54547 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59976 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51364 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61622 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58613 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54550 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58613 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54550 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008075 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377572
-INFO:backend.app.services.oracle:Mapping Project Number '6572' to ID '300000022898415'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-31110101-9999-9999-9999-6572-9999', 'projectDFF': [{'_PROJECT_ID': '300000022898415', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 1: 400 - You must enter a valid charge account. (PO-2055584)
-INFO:     10.10.19.30:62207 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58008 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51333 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008075 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377572
-INFO:backend.app.services.oracle:Mapping Project Number '6572' to ID '300000022898415'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-31110101-9999-9999-9999-9999-6572-9999', 'projectDFF': [{'_PROJECT_ID': '300000022898415', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 1 created successfully.
-INFO:     10.10.19.30:60997 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58055 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50653 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52554 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61384 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51965 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51965 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52252 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49218 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60982 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61538 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61832 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56353 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63251 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49850 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52518 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65225 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52518 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65225 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51989 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53692 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58686 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51419 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51007 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60599 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60599 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51007 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62344 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53371 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52959 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54971 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61831 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61831 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50580 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53041 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63074 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60442 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49959 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57338 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59979 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50588 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49761 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60251 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51292 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63898 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62805 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62598 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49691 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49691 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49691 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49691 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57889 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51700 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49691 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57889 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50646 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63971 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55965 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52181 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51492 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51492 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60794 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60450 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49305 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49378 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59433 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52851 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59894 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55854 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49707 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56585 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50319 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63991 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61485 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60017 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51232 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58125 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58125 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51232 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65207 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62968 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65207 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62968 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60466 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63127 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63127 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60466 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63572 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63572 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63572 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63572 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56070 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64895 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56070 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64895 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60478 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49950 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60478 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49950 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49266 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58292 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52071 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60657 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49266 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60657 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49266 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52071 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52565 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63950 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62170 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63950 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61881 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65509 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61881 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59644 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55212 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60725 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55212 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60725 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53395 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62610 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50955 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62610 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54393 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54642 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54642 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54393 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58784 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50406 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58784 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50406 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64818 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58406 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64818 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58406 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57738 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49170 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57738 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49170 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54367 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62619 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54367 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62619 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61980 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53051 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61980 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53051 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57417 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63461 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61277 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51873 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57417 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63461 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57417 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63461 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51805 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52092 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52092 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51805 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64015 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65267 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64015 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65267 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58122 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62504 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62504 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58122 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57223 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59854 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57223 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64309 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61210 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56061 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61210 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56061 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52373 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59361 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56158 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59361 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61732 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60735 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61732 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60735 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52359 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52359 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52359 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52359 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54181 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64577 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54181 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64577 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50921 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49726 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49726 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50921 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49668 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56149 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58088 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63995 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49668 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56149 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49668 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56149 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53717 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51205 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53717 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51205 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56458 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49813 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49813 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56458 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60302 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56973 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59479 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58805 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57847 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52840 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52664 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52664 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59867 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:51778 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61087 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61087 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53483 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:64880 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65509 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65509 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61763 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56458 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50328 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50328 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49789 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61183 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50570 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50570 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49668 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65073 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:50825 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59444 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57679 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54612 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63063 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56994 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58356 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:58356 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56682 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56114 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56682 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56114 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49766 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49766 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49766 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49766 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:52995 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55747 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53732 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:55747 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53732 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65145 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59204 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65145 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59204 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56252 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:53206 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56252 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65284 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61564 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65148 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:65148 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:61564 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60896 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63509 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:60896 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:63509 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56207 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62798 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:62798 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:56207 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57589 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:54216 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57589 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:59292 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57049 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49839 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.30:49839 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.30:57049 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:60020 - "OPTIONS /process-lines HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008074 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377566
-INFO:backend.app.services.oracle:Mapping Project Number '1001' to ID '300000003510403'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '2', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '', 'projectDFF': [{'_PROJECT_ID': '300000003510403', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 2: 400 - _PROJECT_ID 300000003510403 is not in the list of values.
-INFO:     10.10.19.23:60020 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008074 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377566
-INFO:backend.app.services.oracle:Mapping Project Number '6572' to ID '300000022898415'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '2', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '', 'projectDFF': [{'_PROJECT_ID': '300000022898415', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 2 created successfully.
-INFO:     10.10.19.23:54296 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54296 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54296 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54296 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54296 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51959 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:57242 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008074 with 1 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377566
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 5, 'LineType': 'Goods', 'Description': 'Freight chrges || 996749', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 3000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'Freight', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 5 created successfully.
-INFO:     10.10.19.23:57092 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008074 with 7 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377566
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 1 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 2, 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 2: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 3, 'LineType': 'Goods', 'Description': '100G-LR4 ETHERNET ONLY QSFP28 MODULE||85176290', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'QSFP-100GBASE-LR4', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 3: 400 - The POChargeAccount attribute can only be provided for purchase order schedules with an expense destination type. (PO-2055661)
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 4, 'LineType': 'Goods', 'Description': 'Co-term || 9987', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': '1506978-1', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 4 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 5, 'LineType': 'Goods', 'Description': 'Freight chrges || 996749', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 3000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'Freight', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 5: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 6, 'LineType': 'Goods', 'Description': 'Endpoint Management pre-defined system for 2500 endpoints and 2 connection points - Checkpoint || 997331', 'UOMCode': 'NOS', 'Quantity': 3.0, 'Price': 60000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'CPAC-TR-1T-SSM440', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 3.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 3.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 6 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 7, 'LineType': 'Goods', 'Description': 'Enterprise Software Subscription and Premium Support additional product - Check Point || 39269099', 'UOMCode': 'NOS', 'Quantity': 2.0, 'Price': 100000.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'Hardware', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 2.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 2.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 7: 400 - The POChargeAccount attribute can only be provided for purchase order schedules with an expense destination type. (PO-2055661)
-INFO:     10.10.19.23:54492 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54492 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54492 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64572 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:58470 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008074 with 7 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377566
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 1: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 2, 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 2: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 3, 'LineType': 'Goods', 'Description': '100G-LR4 ETHERNET ONLY QSFP28 MODULE||85176290', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'QSFP-100GBASE-LR4', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 3 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 4, 'LineType': 'Goods', 'Description': 'Co-term || 9987', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': '1506978-1', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 4: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 5, 'LineType': 'Goods', 'Description': 'Freight chrges || 996749', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 3000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'Freight', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 5: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 6, 'LineType': 'Goods', 'Description': 'Endpoint Management pre-defined system for 2500 endpoints and 2 connection points - Checkpoint || 997331', 'UOMCode': 'NOS', 'Quantity': 3.0, 'Price': 60000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'CPAC-TR-1T-SSM440', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 3.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 3.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 6: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 7, 'LineType': 'Goods', 'Description': 'Enterprise Software Subscription and Premium Support additional product - Check Point || 39269099', 'UOMCode': 'NOS', 'Quantity': 2.0, 'Price': 100000.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'Hardware', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 2.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 2.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 7 created successfully.
-INFO:     10.10.19.23:54377 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.23:60068 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64028 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:53734 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:53398 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:58939 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:61285 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.17:51288 - "OPTIONS /login HTTP/1.1" 200 OK
-INFO:     10.10.19.17:51288 - "POST /login HTTP/1.1" 200 OK
-INFO:     10.10.19.23:56213 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51312 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.17:57752 - "OPTIONS /process-lines HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008074 with 7 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377566
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '8', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 8 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '9', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 9 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '10', 'LineType': 'Goods', 'Description': '100G-LR4 ETHERNET ONLY QSFP28 MODULE||85176290', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'QSFP-100GBASE-LR4', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 10: 400 - The POChargeAccount attribute can only be provided for purchase order schedules with an expense destination type. (PO-2055661)
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '11', 'LineType': 'Goods', 'Description': 'Co-term || 9987', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': '1506978-1', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 11 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '12', 'LineType': 'Goods', 'Description': 'Freight chrges || 996749', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 3000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'Freight', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 12 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '13', 'LineType': 'Goods', 'Description': 'Endpoint Management pre-defined system for 2500 endpoints and 2 connection points - Checkpoint || 997331', 'UOMCode': 'NOS', 'Quantity': 3.0, 'Price': 60000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'CPAC-TR-1T-SSM440', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 3.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 3.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-INFO:backend.app.services.oracle:Line item 13 created successfully.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '14', 'LineType': 'Goods', 'Description': 'Enterprise Software Subscription and Premium Support additional product - Check Point || 39269099', 'UOMCode': 'NOS', 'Quantity': 2.0, 'Price': 100000.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'Hardware', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 2.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 2.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 14: 400 - The POChargeAccount attribute can only be provided for purchase order schedules with an expense destination type. (PO-2055661)
-INFO:     10.10.19.17:57752 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.23:55789 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51873 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:55458 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:63851 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64660 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:63249 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64660 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:63249 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:62802 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:50077 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:53499 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:57752 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:62897 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64841 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008074 with 7 lines
-INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377566
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '8', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 8: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '9', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 9: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '10', 'LineType': 'Goods', 'Description': '100G-LR4 ETHERNET ONLY QSFP28 MODULE||85176290', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'QSFP-100GBASE-LR4', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 10: 400 - The POChargeAccount attribute can only be provided for purchase order schedules with an expense destination type. (PO-2055661)
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '11', 'LineType': 'Goods', 'Description': 'Co-term || 9987', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': '1506978-1', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 11: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '12', 'LineType': 'Goods', 'Description': 'Freight chrges || 996749', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 3000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'Freight', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 12: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '13', 'LineType': 'Goods', 'Description': 'Endpoint Management pre-defined system for 2500 endpoints and 2 connection points - Checkpoint || 997331', 'UOMCode': 'NOS', 'Quantity': 3.0, 'Price': 60000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'CPAC-TR-1T-SSM440', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 3.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 3.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 13: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
-INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
-INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '14', 'LineType': 'Goods', 'Description': 'Enterprise Software Subscription and Premium Support additional product - Check Point || 39269099', 'UOMCode': 'NOS', 'Quantity': 2.0, 'Price': 100000.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'Hardware', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 2.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 2.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
-ERROR:backend.app.services.oracle:Oracle POST API Failed for line 14: 400 - A record with the value LineNumber already exists. Enter a unique value.
-INFO:     10.10.19.17:55485 - "POST /process-lines HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64152 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:63988 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:57328 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:58217 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54009 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51794 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:65463 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:61818 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:56956 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64524 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52857 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:49668 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52278 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52278 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52278 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52278 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52420 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52420 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:57918 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:55201 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51027 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:56662 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52134 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:59066 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:56174 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:53628 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54959 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:49956 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:61931 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52685 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:59694 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52169 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:60737 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:60737 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:63882 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:56583 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:55562 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:59345 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:55562 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:59345 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52200 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51556 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:61631 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:55356 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:61299 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64252 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:57196 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:63721 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52720 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54241 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:55123 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:58528 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:65459 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:65459 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52293 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:50550 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:53781 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64491 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54867 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:63647 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:60987 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:56822 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:60987 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:56822 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:50475 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54735 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:62349 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:62516 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:61828 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:64503 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:54377 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51397 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51812 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51812 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.23:52758 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.23:51721 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:65319 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:55299 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:65319 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:55299 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:50965 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:59649 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:49808 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:56144 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:60603 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:51526 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:55544 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:62874 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:61925 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:53957 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:52949 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.20:59437 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:49157 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.20:49755 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57368 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:54786 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57368 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:54786 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:55129 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62911 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:53090 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:53090 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51882 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:60912 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57188 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:57188 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62939 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:62853 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:53848 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:63893 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51409 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.22:51409 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:53658 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51049 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:53658 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51049 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:64151 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:64151 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51054 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:52636 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:65192 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:65192 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49765 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57872 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56987 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:50215 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:52941 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:59124 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56036 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51288 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:55818 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61726 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:60570 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54510 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56094 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56094 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:52604 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:58553 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:58553 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:52604 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:63658 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:63658 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57048 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51367 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57088 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49751 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61653 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61653 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:62196 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:60223 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51803 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:59095 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:60682 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57782 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:62342 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61103 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:50791 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49669 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54034 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:59590 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49669 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56003 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49669 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56003 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:50644 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:64836 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:60724 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:60724 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:55926 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:62471 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:65265 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54068 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:63246 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61956 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49773 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49773 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49296 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54099 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:50162 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:59024 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51416 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51416 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49785 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51564 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61999 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61999 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61999 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:61999 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57755 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57436 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:52143 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:60932 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54328 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54328 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:49668 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:63251 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:55518 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:55518 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54446 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:53282 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:54395 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56602 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56531 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:50241 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:51121 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:55361 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:65297 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:59063 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:53907 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57587 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:53907 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:57587 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:58527 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.21:56451 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:62381 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.21:62381 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.24:55345 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.24:51720 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.24:55345 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.24:51720 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.24:64119 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.24:50536 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.24:59300 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.24:50786 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.24:52306 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '43', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': []}]}]}
+INFO:backend.app.services.oracle:Line item 43 created successfully.
+INFO:     10.10.19.24:56475 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.24:57083 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:53825 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54958 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54958 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 44. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '44', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': []}]}]}
+INFO:backend.app.services.oracle:Line item 44 created successfully.
+INFO:     10.10.19.24:61781 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 44. Stripping POChargeAccount.
+ERROR:backend.app.services.oracle:Project ID not found for: 5172
+INFO:     10.10.19.24:52775 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 45. Stripping POChargeAccount.
+ERROR:backend.app.services.oracle:Project ID not found for: 5174
+INFO:     10.10.19.24:56065 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.24:59225 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64354 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 45. Stripping POChargeAccount.
+ERROR:backend.app.services.oracle:Project ID not found for: 5178
+INFO:     10.10.19.24:61713 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 45. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '1114' to ID '300000003302035'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Conveyance' to ID '300000028558081'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '45', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300000003302035', '_EXPENDITURE_TYPE_ID': '300000028558081', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 45: 400 - _PROJECT_ID 300000003302035 is not in the list of values.
+INFO:     10.10.19.24:58264 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 45. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '1077' to ID '300000003302419'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Conveyance' to ID '300000028558081'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '45', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300000003302419', '_EXPENDITURE_TYPE_ID': '300000028558081', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 45: 400 - _PROJECT_ID 300000003302419 is not in the list of values.
+INFO:     10.10.19.24:49191 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49191 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49191 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 45. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '1008' to ID '300000003302767'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Conveyance' to ID '300000028558081'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '45', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300000003302767', '_EXPENDITURE_TYPE_ID': '300000028558081', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+INFO:backend.app.services.oracle:Line item 45 created successfully.
+INFO:     10.10.19.24:53631 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 45. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '1009' to ID '300000003510043'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Conveyance' to ID '300000028558081'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '45', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300000003510043', '_EXPENDITURE_TYPE_ID': '300000028558081', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 45: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:     10.10.19.24:65264 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.24:65264 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:65264 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:65264 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:60546 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:60546 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:57534 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:60546 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64426 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:60546 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64426 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64922 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64922 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:51885 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:51124 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:51124 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:51885 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:53689 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50504 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64982 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49255 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49255 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64982 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:53615 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54465 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54465 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:53615 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:53615 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54465 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54693 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:59908 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:Mapping Project Number '1070' to ID '300000003302047'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Conveyance' to ID '300000028558081'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '44', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300000003302047', '_EXPENDITURE_TYPE_ID': '300000028558081', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 44: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:     10.10.19.24:65338 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:Mapping Project Number '1070' to ID '300000003302047'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Conveyance' to ID '300000028558081'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '45', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300000003302047', '_EXPENDITURE_TYPE_ID': '300000028558081', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 45: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:     10.10.19.24:52253 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:Mapping Project Number '1070' to ID '300000003302047'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Conveyance' to ID '300000028558081'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '46', 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Services', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300000003302047', '_EXPENDITURE_TYPE_ID': '300000028558081', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 46: 400 - _PROJECT_ID 300000003302047 is not in the list of values.
+INFO:     10.10.19.24:56038 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.24:57962 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:62141 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
 INFO:     10.10.19.24:49668 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.24:52148 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
-INFO:     10.10.19.24:59307 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.24:59231 - "GET /dashboard/metrics HTTP/1.1" 200 OK
-INFO:     10.10.19.24:61174 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49668 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:51811 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50397 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:61316 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:63917 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:49936 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:62261 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54578 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54578 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:57762 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54263 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:57762 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54263 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:60624 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:60624 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
