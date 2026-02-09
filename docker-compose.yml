@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:14-alpine
+    container_name: polinecreation-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: hrms5t6YPg
+      POSTGRES_DB: poline_db
+    ports:
+      - "5434:5432" # Map container's 5432 to host's 5434 to avoid collision with existing local DB
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d poline_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - polinecreation-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: polinecreation-backend:v1
+    container_name: polinecreation-backend
+    env_file: .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:hrms5t6YPg@database:5432/poline_db
+      - RUNNING_IN_DOCKER=true
+      - VAULT_ADDR=http://172.16.10.130:8201
+      - VAULT_TOKEN=${VAULT_TOKEN}
+    ports:
+      - "8000:8000"
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: polinecreation-frontend:v1
+    container_name: polinecreation-frontend
+    ports:
+      - "5173:80" # Mapping host's 5173 to container's 80
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  polinecreation-db-data:
