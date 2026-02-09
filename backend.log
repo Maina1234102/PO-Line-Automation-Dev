@@ -146,3 +146,217 @@ INFO:     10.10.19.24:57762 - "GET /dashboard/metrics HTTP/1.1" 200 OK
 INFO:     10.10.19.24:54263 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
 INFO:     10.10.19.24:60624 - "GET /dashboard/metrics HTTP/1.1" 200 OK
 INFO:     10.10.19.24:60624 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:55935 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:59117 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:63512 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54814 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:64699 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54705 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:58896 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:58896 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:59528 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:54001 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:61530 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:56944 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50698 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:55558 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:53398 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:57434 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:52453 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50357 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:58011 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:58011 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:58011 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:58011 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:62228 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:62228 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:62109 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50838 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:61845 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:61845 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50548 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:55406 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:58131 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:55017 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:56383 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:65007 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:63990 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50765 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:50518 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:55079 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.24:55404 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.24:55079 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.26:59473 - "OPTIONS /login HTTP/1.1" 200 OK
+INFO:     10.10.19.26:59473 - "POST /login HTTP/1.1" 200 OK
+INFO:     10.10.19.26:57497 - "OPTIONS /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008072 with 7 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377562
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+INFO:backend.app.services.oracle:Line item 1 created successfully.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 2, 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+INFO:backend.app.services.oracle:Line item 2 created successfully.
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 3. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 3, 'LineType': 'Goods', 'Description': '100G-LR4 ETHERNET ONLY QSFP28 MODULE||85176290', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'QSFP-100GBASE-LR4', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+INFO:backend.app.services.oracle:Line item 3 created successfully.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 4, 'LineType': 'Goods', 'Description': 'Co-term || 9987', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': '1506978-1', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+INFO:backend.app.services.oracle:Line item 4 created successfully.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 5, 'LineType': 'Goods', 'Description': 'Freight chrges || 996749', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 3000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'Freight', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+INFO:backend.app.services.oracle:Line item 5 created successfully.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 6, 'LineType': 'Goods', 'Description': 'Endpoint Management pre-defined system for 2500 endpoints and 2 connection points - Checkpoint || 997331', 'UOMCode': 'NOS', 'Quantity': 3.0, 'Price': 60000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'CPAC-TR-1T-SSM440', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 3.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 3.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+INFO:backend.app.services.oracle:Line item 6 created successfully.
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 7. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 7, 'LineType': 'Goods', 'Description': 'Enterprise Software Subscription and Premium Support additional product - Check Point || 39269099', 'UOMCode': 'NOS', 'Quantity': 2.0, 'Price': 100000.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'Hardware', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 2.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 2.0, 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+INFO:backend.app.services.oracle:Line item 7 created successfully.
+INFO:     10.10.19.26:57497 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008072 with 7 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003781377562
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 1, 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 1: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 2, 'LineType': 'Goods', 'Description': 'EM-Support || 9983', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': 'EM-Support', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 2: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 3. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 3, 'LineType': 'Goods', 'Description': '100G-LR4 ETHERNET ONLY QSFP28 MODULE||85176290', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'QSFP-100GBASE-LR4', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 3: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 4, 'LineType': 'Goods', 'Description': 'Co-term || 9987', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'SECURITY-SERVICE', 'Item': '1506978-1', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 4: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 5, 'LineType': 'Goods', 'Description': 'Freight chrges || 996749', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 3000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'Freight', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 5: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Services' to ID '300000396542420'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 6, 'LineType': 'Goods', 'Description': 'Endpoint Management pre-defined system for 2500 endpoints and 2 connection points - Checkpoint || 997331', 'UOMCode': 'NOS', 'Quantity': 3.0, 'Price': 60000.0, 'Category': 'OTHERS-SERVICE', 'Item': 'CPAC-TR-1T-SSM440', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 3.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 3.0, 'POChargeAccount': '1001-41110102-9999-9999-1090-9999-9999-9999', 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542420', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 6: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:backend.app.services.oracle:DestinationType is 'Inventory' for line 7. Stripping POChargeAccount.
+INFO:backend.app.services.oracle:Mapping Project Number '4744' to ID '300003777095796'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Cost Of Goods Sold -Goods' to ID '300000396542425'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': 7, 'LineType': 'Goods', 'Description': 'Enterprise Software Subscription and Premium Support additional product - Check Point || 39269099', 'UOMCode': 'NOS', 'Quantity': 2.0, 'Price': 100000.0, 'Category': 'NETWORKING-HARDWARE', 'Item': 'Hardware', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 2.0, 'ShipToOrganization': 'NEW DELHI', 'ShipToLocation': 'IEIPL NEW DELHI WH', 'DestinationType': 'Inventory', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '4-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL NEW DELHI WH', 'Quantity': 2.0, 'projectDFF': [{'_PROJECT_ID': '300003777095796', '_EXPENDITURE_TYPE_ID': '300000396542425', '_ORGANIZATION_ID_Display': 'NEW DELHI'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 7: 400 - A record with the value LineNumber already exists. Enter a unique value.
+INFO:     10.10.19.26:50433 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.30:54433 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:54433 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:54433 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:61240 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57426 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57820 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57426 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57820 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:63771 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:55248 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57196 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:51934 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57196 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:50137 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52607 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:49668 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52607 - "OPTIONS /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:49784 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:49668 - "OPTIONS /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52607 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:49784 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52607 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52040 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52040 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52040 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52040 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:50500 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:50500 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:59158 - "OPTIONS /process-lines HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:Mapping Project Number '1001' to ID '300000003510403'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '47', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-21210101-1010-1110-1010-1001-1001', 'projectDFF': [{'_PROJECT_ID': '300000003510403', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+ERROR:backend.app.services.oracle:Oracle POST API Failed for line 47: 400 - _PROJECT_ID 300000003510403 is not in the list of values.
+INFO:     10.10.19.30:59158 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.30:59158 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:59158 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:56756 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:59158 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57238 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:56656 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57238 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:55684 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:50016 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:60203 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:backend.app.api.endpoints:Received submission for PO: INS-PO-008051 with 1 lines
+INFO:backend.app.api.endpoints:Found POHeaderId: 300003780888193
+INFO:backend.app.services.oracle:Mapping Project Number '1007' to ID '300000003302575'
+INFO:backend.app.services.oracle:Mapping Expenditure Name 'Local Conveyance' to ID '300000004181249'
+INFO:backend.app.services.oracle:Creating line item with payload: {'LineNumber': '48', 'LineType': 'Goods', 'Description': 'AMC Expense || 998313', 'UOMCode': 'NOS', 'Quantity': 1.0, 'Price': 100.0, 'Category': 'OTHERS-SERVICE', 'Item': 'AMC', 'NegotiatedFlag': False, 'schedules': [{'ScheduleNumber': 1, 'ProductType': 'Goods', 'Quantity': 1.0, 'ShipToOrganization': 'MUMBAI', 'ShipToLocation': 'IEIPL MUMBAI WH', 'DestinationType': 'Expense', 'InvoiceMatchOption': 'Receipt', 'InvoiceMatchOptionCode': 'P', 'MatchApprovalLevel': '3-Way', 'ReceiptRequiredFlag': False, 'InspectionRequiredFlag': True, 'ReceiptRoutingId': 1, 'ReceiptCloseTolerancePercent': 0, 'InvoiceCloseTolerancePercent': 0, 'RequestedDeliveryDate': '', 'distributions': [{'DistributionNumber': 1, 'DeliverToLocation': 'IEIPL MUMBAI WH', 'Quantity': 1.0, 'POChargeAccount': '1001-41110102-9999-9999-9999-9999-1007-9999', 'projectDFF': [{'_PROJECT_ID': '300000003302575', '_EXPENDITURE_ITEM_DATE': '2026-06-05', '_EXPENDITURE_TYPE_ID': '300000004181249', '_ORGANIZATION_ID_Display': 'MAHARASHTRA'}]}]}]}
+INFO:backend.app.services.oracle:Line item 48 created successfully.
+INFO:     10.10.19.30:53977 - "POST /process-lines HTTP/1.1" 200 OK
+INFO:     10.10.19.30:53977 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:53977 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:53977 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:53977 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:50585 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:54698 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:51359 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:63958 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57028 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     10.10.19.30:52845 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57875 - "GET /dashboard/metrics HTTP/1.1" 200 OK
+INFO:     10.10.19.30:57875 - "GET /dashboard/recent-uploads HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+INFO:     Finished server process [282535]
+ERROR:    Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/inspira/maina/polinecreation_V1.0/venv/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+    with self.capture_signals():
+  File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "/home/inspira/maina/polinecreation_V1.0/venv/lib/python3.12/site-packages/uvicorn/server.py", line 331, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "/usr/lib/python3.12/asyncio/runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/inspira/maina/polinecreation_V1.0/venv/lib/python3.12/site-packages/starlette/routing.py", line 701, in lifespan
+    await receive()
+  File "/home/inspira/maina/polinecreation_V1.0/venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+

@@ -5,9 +5,10 @@ from datetime import datetime
 import json
 
 class LoggingService:
-    def create_upload(self, db: Session, filename: str, total_lines: int) -> ExcelUpload:
+    def create_upload(self, db: Session, filename: str, total_lines: int, po_number: str = None) -> ExcelUpload:
         upload = ExcelUpload(
             filename=filename,
+            po_number=po_number,
             total_lines=total_lines,
             status="Processing"
         )

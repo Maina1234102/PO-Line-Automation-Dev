@@ -197,6 +197,7 @@ const Dashboard = () => {
                         <thead style={{ position: 'sticky', top: 0, background: 'rgba(30, 30, 40, 0.95)', backdropFilter: 'blur(10px)', zIndex: 1 }}>
                             <tr>
                                 <th style={{ paddingLeft: '1.5rem' }}>File Name</th>
+                                <th>PO Number</th>
                                 <th>Status</th>
                                 <th>Lines</th>
                                 <th>Success</th>
@@ -214,6 +215,7 @@ const Dashboard = () => {
                                     style={{ borderBottom: '1px solid rgba(255,255,255,0.02)' }}
                                 >
                                     <td style={{ paddingLeft: '1.5rem', fontWeight: 500 }}>{upload.filename}</td>
+                                    <td style={{ fontWeight: 500, color: '#60a5fa' }}>{upload.po_number || '-'}</td>
                                     <td>
                                         <span style={{
                                             padding: '4px 12px',

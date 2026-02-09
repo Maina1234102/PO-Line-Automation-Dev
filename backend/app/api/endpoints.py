@@ -37,7 +37,8 @@ async def process_lines(submission: POSubmission, db: Session = Depends(get_db),
     upload_record = logging_service.create_upload(
         db, 
         filename=submission.excel_filename or "Unknown", 
-        total_lines=len(submission.lines)
+        total_lines=len(submission.lines),
+        po_number=submission.po_number
     )
 
     try:

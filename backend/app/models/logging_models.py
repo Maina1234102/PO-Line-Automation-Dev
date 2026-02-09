@@ -8,6 +8,7 @@ class ExcelUpload(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     filename = Column(String, index=True)
+    po_number = Column(String, index=True)
     upload_time = Column(DateTime, default=datetime.utcnow)
     status = Column(String, default="Processing") # Processing, Completed, Failed
     total_lines = Column(Integer, default=0)
