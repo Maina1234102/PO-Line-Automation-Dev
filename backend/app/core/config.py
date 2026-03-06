@@ -7,8 +7,8 @@ load_dotenv()
 
 class Settings:
     RUNNING_IN_DOCKER = os.getenv("RUNNING_IN_DOCKER", "false").lower() == "true"
-    VAULT_ADDR = os.getenv("VAULT_ADDR", "http://vault:8200")
-    VAULT_TOKEN = os.getenv("VAULT_TOKEN", "root")
+    VAULT_ADDR = os.getenv("VAULT_ADDR")
+    VAULT_TOKEN = os.getenv("VAULT_TOKEN")
 
     if RUNNING_IN_DOCKER:
         try:
@@ -19,16 +19,16 @@ class Settings:
             vault_data = response.json().get("data", {}).get("data", {})
 
             ORACLE_BASE_URL = vault_data.get("ORACLE_BASE_URL", os.getenv("ORACLE_BASE_URL"))
-            DATABASE_URL = vault_data.get("DATABASE_URL", os.getenv("DATABASE_URL", "postgresql://postgres:hrms5t6YPg@localhost/poline_db"))
+            DATABASE_URL = vault_data.get("DATABASE_URL", os.getenv("DATABASE_URL"))
             if DATABASE_URL and "localhost" in DATABASE_URL:
                 DATABASE_URL = DATABASE_URL.replace("localhost:5433", "database:5432").replace("localhost", "database")
         except Exception as e:
             print(f"Error loading secrets from Vault: {e}")
             ORACLE_BASE_URL = os.getenv("ORACLE_BASE_URL")
-            DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:hrms5t6YPg@localhost/poline_db")
+            DATABASE_URL = os.getenv("DATABASE_URL")
     else:
         ORACLE_BASE_URL = os.getenv("ORACLE_BASE_URL")
-        DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:hrms5t6YPg@localhost/poline_db")
+        DATABASE_URL = os.getenv("DATABASE_URL")
     
     # Paths
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

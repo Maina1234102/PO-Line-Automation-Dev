@@ -29,7 +29,7 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:hrms5t6YPg@database:5432/poline_db
       - RUNNING_IN_DOCKER=true
-      - VAULT_ADDR=http://172.16.10.130:8201
+      - VAULT_ADDR=${VAULT_ADDR}
       - VAULT_TOKEN=${VAULT_TOKEN}
     ports:
       - "8000:8000"

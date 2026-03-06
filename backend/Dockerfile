@@ -32,6 +32,6 @@ EXPOSE 8000
 
 # Healthcheck to ensure the API is running
 HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
-  CMD curl --fail http://localhost:8000/docs || exit 1
+CMD curl --fail http://localhost:8000/docs || exit 1
 
 ENTRYPOINT ["./entrypoint.sh"]

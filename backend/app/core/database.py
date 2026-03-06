@@ -4,7 +4,7 @@ from backend.app.core.config import settings
 
 # Use settings.DATABASE_URL if available, otherwise fallback (or fail)
 # For now, we'll assume settings has it or we default to a standard local url
-SQLALCHEMY_DATABASE_URL = getattr(settings, "DATABASE_URL", "postgresql://postgres:password@localhost/poline_db")
+SQLALCHEMY_DATABASE_URL = getattr(settings, "DATABASE_URL")
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
