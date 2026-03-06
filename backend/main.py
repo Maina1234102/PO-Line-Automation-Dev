@@ -3,4 +3,4 @@ import uvicorn
 from backend.app.main import app
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, ssl_keyfile="key.pem", ssl_certfile="cert.pem")
+    uvicorn.run(app, host="172.16.10.130", port=8000)

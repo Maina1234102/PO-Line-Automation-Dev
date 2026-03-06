@@ -7,7 +7,7 @@ class ProjectDFF(BaseModel):
     expenditure_type_id: Optional[Any] = Field(None, alias="_EXPENDITURE_TYPE_ID")
     organization_id: Optional[Any] = Field(None, alias="_ORGANIZATION_ID_Display")
     task_id: Optional[Any] = Field(None, alias="_TASK_ID")
-    # contract_id: Optional[Any] = Field(None, alias="_CONTRACT_ID")
+    contract_id: Optional[Any] = Field(None, alias="_CONTRACT_ID")
 
     class Config:
         populate_by_name = True
@@ -31,21 +31,22 @@ class Distribution(BaseModel):
 
 class Schedule(BaseModel):
     schedule_number: Optional[int] = Field(1, alias="ScheduleNumber")
-    product_type: Optional[str] = Field("Goods", alias="ProductType")
     quantity: Optional[float] = Field(None, alias="Quantity")
     ship_to_organization: Optional[str] = Field(None, alias="ShipToOrganization")
     ship_to_location: Optional[str] = Field(None, alias="ShipToLocation")
     destination_type: Optional[str] = Field(None, alias="DestinationType")
+    transaction_business_category_id: Optional[int] = Field(20234, alias="TransactionBusinessCategoryId")
     # destination_type_code: Optional[str] = Field("EXPENSE", alias="DestinationTypeCode")
     invoice_match_option: Optional[str] = Field(None, alias="InvoiceMatchOption")
     invoice_match_option_code: Optional[str] = Field("P", alias="InvoiceMatchOptionCode")
+    requested_delivery_date: Optional[str] = Field(None, alias="RequestedDeliveryDate")
     match_approval_level: Optional[str] = Field(None, alias="MatchApprovalLevel")
     receipt_required_flag: Optional[bool] = Field(False, alias="ReceiptRequiredFlag")
     inspection_required_flag: Optional[bool] = Field(True, alias="InspectionRequiredFlag")
     receipt_routing_id: Optional[int] = Field(1, alias="ReceiptRoutingId")
     receipt_close_tolerance_percent: Optional[float] = Field(0, alias="ReceiptCloseTolerancePercent")
     invoice_close_tolerance_percent: Optional[float] = Field(0, alias="InvoiceCloseTolerancePercent")
-    requested_delivery_date: Optional[str] = Field(None, alias="RequestedDeliveryDate")
+    #product_fiscal_classification: Optional[str] = Field(None, alias="ProductFiscalClassification")
     distributions: List[Distribution] = []
 
     class Config:

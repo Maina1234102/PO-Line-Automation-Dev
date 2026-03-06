@@ -140,7 +140,6 @@ function Home() {
                 // Construct Schedule
                 const schedule = {
                     ScheduleNumber: 1,
-                    ProductType: row['Product Type'] || "Goods",
                     Quantity: row['Quantity'],
                     ShipToOrganization: row['Organization'],
                     ShipToLocation: row['Deliver To Location'] || row['DeliverToLocation'],
@@ -152,6 +151,7 @@ function Home() {
                     ReceiptRequiredFlag: false,
                     InspectionRequiredFlag: true,
                     RequestedDeliveryDate: row['Requested Delivery Date'],
+                    ProductFiscalClassification: row['Product Fiscal Classification'],
 
                     // Nested Distribution
                     distributions: [{
@@ -194,7 +194,7 @@ function Home() {
                 lines: mappedLines
             }
 
-            const backendUrl = `https://172.16.10.130:8000/process-lines`
+            const backendUrl = `http://172.16.10.130:8000/process-lines`
             const response = await fetch(backendUrl, {
                 method: 'POST',
                 headers: {
@@ -276,7 +276,7 @@ function Home() {
         // Log download event
         if (uploadId) {
             try {
-                await fetch('https://172.16.10.130:8000/log-download', {
+                await fetch('http://172.16.10.130:8000/log-download', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

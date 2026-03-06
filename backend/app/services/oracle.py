@@ -10,8 +10,9 @@ class OracleService:
     def get_po_header_id(self, order_number: str, auth: tuple = None) -> str:
         url = f"{settings.ORACLE_BASE_URL}/fscmRestApi/resources/latest/purchaseOrders?q=OrderNumber='{order_number}'"
         try:
-            # Use provided auth or fallback to settings (fallback for migration/test)
-            request_auth = auth if auth else (settings.ORACLE_USER, settings.ORACLE_PASS)
+            if not auth:
+                raise ValueError("Oracle credentials (auth) are required.")
+            request_auth = auth
             response = requests.get(url, auth=request_auth)
             response.raise_for_status()
             data = response.json()
@@ -79,7 +80,9 @@ class OracleService:
 
         try:
             logger.info(f"Creating line item with payload: {payload}")
-            request_auth = auth if auth else (settings.ORACLE_USER, settings.ORACLE_PASS)
+            if not auth:
+                raise ValueError("Oracle credentials (auth) are required.")
+            request_auth = auth
             response = requests.post(url, auth=request_auth, json=payload, headers=headers)
             
             if response.status_code in [200, 201]:
@@ -97,10 +100,13 @@ class OracleService:
         """Verifies Oracle credentials by making a simple metadata call."""
         url = f"{settings.ORACLE_BASE_URL}/fscmRestApi/resources/latest/purchaseOrders?limit=1"
         try:
+            logger.info(f"Verifying credentials against {url}")
             response = requests.get(url, auth=auth)
+            if response.status_code != 200:
+                logger.error(f"Credential verification failed with status {response.status_code}: {response.text}")
             return response.status_code == 200
         except Exception as e:
-            logger.error(f"Credential verification failed: {e}")
+            logger.error(f"Credential verification failed with exception: {e}")
             return False
 
 oracle_service = OracleService()

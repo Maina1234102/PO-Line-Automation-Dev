@@ -65,8 +65,8 @@ const Dashboard = () => {
         const fetchData = async () => {
             try {
                 const [metricsRes, uploadsRes] = await Promise.all([
-                    fetch('https://172.16.10.130:8000/dashboard/metrics', { headers: getAuthHeader() }),
-                    fetch('https://172.16.10.130:8000/dashboard/recent-uploads', { headers: getAuthHeader() })
+                    fetch('http://172.16.10.130:8000/dashboard/metrics', { headers: getAuthHeader() }),
+                    fetch('http://172.16.10.130:8000/dashboard/recent-uploads', { headers: getAuthHeader() })
                 ])
 
                 if (metricsRes.ok && uploadsRes.ok) {
@@ -235,7 +235,7 @@ const Dashboard = () => {
                                         {upload.error_count}
                                     </td>
                                     <td style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                                        {new Date(upload.created_at).toLocaleString()}
+                                        {new Date(upload.created_at + 'Z').toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}
                                     </td>
                                 </motion.tr>
                             ))}

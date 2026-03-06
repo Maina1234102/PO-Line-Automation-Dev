@@ -20,7 +20,7 @@ const LoginPage = () => {
 
         // Real authentication logic calling the backend
         try {
-            const response = await fetch('https://172.16.10.130:8000/login', {
+            const response = await fetch('http://172.16.10.130:8000/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
